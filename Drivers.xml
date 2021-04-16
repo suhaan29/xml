@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- prolog/declaration -->
+
+<!-- this is just the processing info -->
+<!-- encoding defines the character set, like utf-16 utf-8 is default standalone 
+	does it exist on its one or does it uses other external documents like schema 
+	default is no meaning it can use other files -->
+
+
+<DriversLicense> <!-- parent elements -->
+
+	<Number>23</Number>
+	<FirstName>Suhaan</FirstName>
+	<LastName>&lt;Pinapala</LastName>
+	<DateOfBirth>12/3/2002</DateOfBirth>
+	<DateOfIssue>11/11/2011</DateOfIssue>
+	<Photo location="r/r/as.jpg" />
+	
+	<![CDATA[
+	
+	literally type anything here are the xml parser 
+	will ignore it 
+	and suppose < .adsfadsf
+	
+	to give examples like we can include any xml document
+	any characters are not passed
+	
+	Character Data
+	
+	do not nest
+	
+	can have any number of cdata blocks
+	
+	]]>
+
+    <Address>
+    
+    <City>Mumbai</City>
+    <State>Maharashtra</State>
+    <PinCode>400051</PinCode>
+    
+    
+    </Address>
+
+</DriversLicense>
+
+
+<!-- rules for well formedness
+
+should always be a root element 
+closing tags must be there
+there must be properly nested
+tags are case sensitive 
+attribute values must be in quotes
+
+
+
+
+ attributes are like extra information regarding that they add special 
+	meaning to the elements Empty elemets no child or text data predefined xml 
+	character entities , < > & < &lt; > &gt; & &amp; ' &quot; " &apos; CDATA 
+	block in cdata block we can include any character or any thing that the xml 
+	might parse in normal form Rules ->case sensitive needs to be well formed -->
